@@ -7,7 +7,7 @@ import os
 import gdown
 
 if not os.path.exists("similarity.pkl"):
-    url = "https://drive.google.com/uc?id=16FIu7J_JaFgzDt4zUM-z-KOIVOkUt-J8"
+    url = "https://drive.google.com/file/d/16FIu7J_JaFgzDt4zUM-z-KOIVOkUt-J8/view?usp=drive_link"
     gdown.download(url, "similarity.pkl", quiet=False)
 
 similarity = pickle.load(open('similarity.pkl', 'rb'))
