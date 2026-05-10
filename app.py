@@ -3,6 +3,15 @@ import pickle
 import pandas as pd
 import requests
 import ast
+import os
+import gdown
+
+if not os.path.exists("similarity.pkl"):
+    url = "https://drive.google.com/uc?id=16FIu7J_JaFgzDt4zUM-z-KOIVOkUt-J8"
+    gdown.download(url, "similarity.pkl", quiet=False)
+
+similarity = pickle.load(open('similarity.pkl', 'rb'))
+
 
 
 
